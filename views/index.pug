@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1 Task 1
+  p Create an SDK for this REST API for the specified endpoints. e.g. you can create a class for that
+  code class SDK {
+      p  getUser: () => string;
+      p  getUsers: () => string;
+      p  createUser: () => string;
+      p  updateUser: () => string;
+      p  deleteUser: () => string;
+      p }
+  ul
+    li '/users (GET)'
+    li '/users/:id (GET)'
+    li '/users (POST)'
+    li '/users/:id (PUT)'
+    li '/users/:id (DELETE)'
+  p The API has different rate limits for each endpoint mentioned above.
+  p use this /rate-limits (GET) endpoint to retrieve rate limits info.
+  p for Authorization use Bearer token. toke: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsImlkIjoxLCJmaXJzdE5hbWUiOiJKb2huI
+  p the main thing is that the end user can call the sdk methods as often as he wants without any rate limit error
